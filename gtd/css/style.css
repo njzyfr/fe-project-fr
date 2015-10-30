@@ -1,0 +1,315 @@
+body {
+	background-color: #fff;
+}
+html, body, .container {
+	width: 100%;
+	height: 100%;
+	min-width: 1360px;
+	min-height: 780px;
+}
+.header {
+	width: 100%;
+	height: 60px;
+	min-width: 1360px;
+	min-height: 60px;
+	border: solid 1px #d2d2d2;
+	background-color: #5d6684;
+}
+.title {
+	margin-left: 15px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.content {
+	position: absolute;
+	top: 62px;
+	bottom: 0;
+	width: 100%;
+	min-height: 718px;
+	min-width: 1360px;
+}
+
+.cateList {
+	position: absolute;
+	left: 0;	
+	top: 0;
+	bottom: 0;
+	width: 240px;
+	min-height: 718px;
+	min-width: 240px;
+	background-color: #ddd;
+}
+.cateList h2, .cateList h3 {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 2;
+}
+.cateList h2 {
+	padding-left: 15px;
+}
+.cateList h3 {
+	padding-left: 30px;
+}
+.cateList .fa {
+	margin-right: 5px;
+}
+.allTask {
+	padding-top: 5px;
+}
+.cateList h2:hover, .cateList h3:hover{
+	background-color: #fff;
+	cursor: pointer;
+}
+.cateList .active {
+	background-color: #fff;
+}
+.fa-times {
+	position: absolute;
+	right: 5px;
+	margin-top: 8px;
+	display: none;
+}
+.cateList h2:hover .fa-times, .cateList h3:hover .fa-times {
+	display: inline-block;
+}
+.addCate, .addTask {
+	height: 60px;
+	font-size: 16px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #d8d8d8;
+	cursor: pointer;
+	border-top: solid 1px #d2d2d2;
+	border-right: solid 1px #d2d2d2;
+}
+.addCate {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.addTask {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.addCate:hover, .addTask:hover {
+	background-color: #c1c3de;
+	color: #343521;
+}
+.addCate {
+	width: 240px;
+}
+.addTask {
+	width: 250px;
+}
+
+
+.taskBar {
+	position: absolute;
+	left: 240px;
+	top: 0;
+	bottom: 0;
+	width: 250px;
+	min-height: 718px;
+	min-width: 250px;
+	border-left: solid 1px #d2d2d2;
+	background-color: #eeeef0;
+/*	border-bottom: solid 1px #d2d2d2;*/
+}
+.status {
+	padding: 15px 19px 10px 20px;
+/*	padding-top: 15px;
+	padding-bottom: 10px;*/
+	text-align: center;
+	border-bottom: dashed 1px #d2d2d2;
+	overflow: hidden;
+}
+.status li {
+	float: left;
+	margin: 0 5px;
+	width: 60px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	background-color: #ddd;
+	cursor: pointer;
+}
+.status .active {
+	background-color: #c1c3de;
+}
+.status li:hover {
+	background-color: #c1c3de;
+}
+.taskList {
+	font-size: 15px;
+	line-height: 2;
+}
+.dateName {
+	padding-left: 15px;
+	background-color: #fafaee;
+}
+.dateList h4 {
+	padding-left: 30px;
+	font-weight: normal;
+	cursor: pointer;
+}
+.dateList h4:hover, .dateList .active {
+	background-color: #fff;
+}
+.dateList h4:hover .fa-times {
+	display: inline-block;
+}
+.finished {
+	color: #24692b;
+}
+.task {
+	position: absolute;
+	left: 491px;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	min-height: 718px;
+	min-width: 870px;
+	border-left: solid 1px #d2d2d2;
+}
+
+.taskDisplay {
+	/*display: none;*/
+}
+
+.taskTitle, .taskDate, .taskContent {
+	padding-left: 15px;
+	font-size: 16px;
+}
+.taskTitle {
+	height: 55px;
+	border-bottom: solid 1px #d2d2d2;
+	background-color: #f2f2f2;
+	line-height: 55px;
+}
+.manipulate {
+	position: absolute;
+	right: 20px;
+}
+.manipulate .fa {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 15px 8px;
+	cursor: pointer;
+}
+.taskDate {
+	height: 55px;
+	border-bottom: solid 1px #d2d2d2;
+	background-color: #fafaee;	
+	line-height: 55px;
+}
+.taskContent {
+	position: absolute;
+	top: 112px;
+	left: 0;
+	right: 10px;
+	bottom: 80px;
+	padding: 10px 15px; 
+	line-height: 1.6;
+
+/*	white-space: pre-line;*/
+}
+.taskEdit {
+	display: none;
+}
+
+.taskEdit input {
+	border: solid 1px #d2d2d2;
+	padding: 5px 10px;
+	width: 200px;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+.taskEdit textarea {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	resize: none;
+	font-family: "Microsoft YaHei";
+}
+.buttonArea {
+	position: fixed;
+	bottom: 15px;
+	right: 20px;
+	font-size: 16px;
+}
+.buttonArea button {
+	padding: 8px 20px;
+	margin-left: 10px;
+	font-size: 16px;
+	border: none;
+}
+.infoTask {
+	color: #f00;
+}
+.saveTask {
+	background-color: #c1c3de;
+}
+
+.mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -180px;
+	margin-top: -100px;
+	width: 360px;
+	height: 200px;
+	background-color: #eee;
+	font-size: 16px;
+}
+.modalHead {
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: center;
+	border-bottom: dashed 1px #d2d2d2;
+}
+.modalBody {
+	padding-left: 40px;
+	padding-top: 16px;
+	line-height: 2.5;
+}
+#modalSelect, .cateNameInput {
+	width: 180px;
+	height: 30px;
+	border: solid 1px #d2d2d2;
+	padding-left: 5px;
+	font-size: 16px;
+	font-family: "Microsoft YaHei";
+}
+.cateNameInput {
+	padding-left: 7px;
+}
+.modalFoot {
+	position: absolute;
+	right: 40px;
+	margin-top: 15px;
+}
+.modalFoot button {
+	border: none;
+	margin-left: 10px;
+	width: 60px;
+	height: 30px;
+}
+.infoCate {
+	color:#f00;
+}
+.saveCate {
+	background-color: #c1c3de;
+}

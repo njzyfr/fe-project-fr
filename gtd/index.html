@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>GTD Tools</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1 class="title">GTD Tools</h1>
+		</div>
+		<div class="content">
+			<div class="cateList">
+				<h2 class="allTask" data-cate="-1">所有任务<span class="taskNum"> () </span></h2>
+				<h2 class="general" data-cate="-1">分类列表</h2>
+				<ul class="cate">
+<!-- 					<li>
+						<h2 cateid="0"><i class="fa fa-folder"></i>默认分类<span> (0)</span></h2>
+						<ul class="cateChild">
+							<li>
+								<h3 catechildid="0" class="active"><i class="fa fa-file-o"></i>默认子分类<span> (0)</span></h3>
+							</li>
+						</ul>
+					</li> -->
+<!-- 					<li>
+						<h2 cateid="1"><i class="fa fa-folder"></i>百度IFE<span> (5)</span><i class="fa fa-times"></i></h2>
+						<ul class="cateChild">
+							<li>
+								<h3 catechildid="1"><i class="fa fa-file-o"></i>HTML<span> (3)</span><i class="fa fa-times"></i></h3>
+							</li>
+							<li>
+								<h3 catechildid="2"><i class="fa fa-file-o"></i>CSS<span> (2)</span><i class="fa fa-times"></i></h3>
+							</li>
+						</ul>						
+					</li> -->
+				</ul>
+				<div class="addCate">
+					<i class="fa fa-plus"></i>新增分类
+				</div>
+			</div>
+			<div class="taskBar">
+				<div class="status">
+					<ul>
+						<li class="allTaskTag statusTag" data-status="0">所有</li>
+						<li class="unfinishedTag statusTag" data-status="1">未完成</li>
+						<li class="finishedTag statusTag" data-status="2">已完成</li>
+					</ul>
+				</div>
+				<div class="taskList">
+<!-- 					<ul>
+						<li class="dateList">
+							<p class="dateName">2015-09-26</p>
+							<ul>
+								<li>
+									<h4 data-task="0" class="finished active">任务管理器说明<i class="fa fa-times"></i></h4>
+								</li>
+								<li>
+									<h4 data-task="1">taike布局<i class="fa fa-times"></i></h4>
+								</li>
+							</ul>
+						</li>
+						<li class="dateList">
+							<p class="dateName">2015-10-07</p>
+							<ul>
+								<li>
+									<h4 data-task="3">管理器布局<i class="fa fa-times"></i></h4>
+								</li>
+								<li>
+									<h4 data-task="4">taike调试<i class="fa fa-times"></i></h4>
+								</li>
+							</ul>							
+						</li>
+					</ul> -->
+				</div>
+				<div class="addTask">
+					<i class="fa fa-plus"></i>新增任务
+				</div>
+			</div>
+			<div class="task">
+				<div class="taskDisplay">
+					<div class="taskTitle">
+						<span class="taskName"></span>
+						<span class="manipulate">						
+							<i class="fa fa-check-square-o"></i>
+							<i class="fa fa-pencil-square-o"></i>
+						</span>
+					</div>
+					<div class="taskDate">
+						
+					</div>
+					<div class="taskContent">
+						
+					</div>
+				</div>
+				<div class="taskEdit">
+					<div class="taskTitle">
+						<span class="taskName">任务名称：<input type="text" class="taskNameInput"></span>
+					</div>
+					<div class="taskDate">
+						任务日期：<input type="date" class="taskDateInput">
+					</div>
+					<div class="taskContent">
+						<textarea class="taskContentInput"></textarea>
+					</div>		
+					<div class="buttonArea">
+						<span class="infoTask"></span>
+						<button class="saveTask">保存</button>
+						<button class="cancelTask">取消</button>
+					</div>			
+				</div>
+			</div>
+		</div>
+<!-- 		<div class="addCate">
+			<i class="fa fa-plus"></i>新增分类
+		</div> -->
+		<div class="mask">
+			<div class="modal">
+				<div class="modalHead">
+					<p>新增分类</p>
+				</div>
+				<div class="modalBody">
+					<p>选择主分类：
+						<select name="modalSelect" id="modalSelect">
+<!-- 							<option value="-1">新增主分类</option>
+							<option value="1">百度IFE</option> -->
+						</select>
+					</p>
+					<p>新分类名称：
+						<input type="text" class="cateNameInput">
+					</p>
+				</div>
+				<div class="modalFoot">
+					<span class="infoCate"></span>
+					<button class="saveCate">确认</button>
+					<button class="cancelCate">取消</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/util.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/view.js"></script>
+	<script src="js/control.js"></script>
+</body>
+</html>
