@@ -5,13 +5,16 @@ html, body, .container {
 	width: 100%;
 	height: 100%;
 	min-width: 1360px;
-	min-height: 780px;
+	/*min-height: 780px;*/
+}
+.container {
+	padding-bottom: 70px;
 }
 .header {
 	width: 100%;
 	height: 60px;
 	min-width: 1360px;
-	min-height: 60px;
+	/*min-height: 60px;*/
 	border: solid 1px #d2d2d2;
 	background-color: #5d6684;
 }
@@ -27,7 +30,7 @@ html, body, .container {
 	top: 62px;
 	bottom: 0;
 	width: 100%;
-	min-height: 718px;
+	/*min-height: 718px;*/
 	min-width: 1360px;
 }
 
@@ -37,7 +40,7 @@ html, body, .container {
 	top: 0;
 	bottom: 0;
 	width: 240px;
-	min-height: 718px;
+	/*min-height: 718px;*/
 	min-width: 240px;
 	background-color: #ddd;
 }
@@ -112,7 +115,7 @@ html, body, .container {
 	top: 0;
 	bottom: 0;
 	width: 250px;
-	min-height: 718px;
+	/*min-height: 718px;*/
 	min-width: 250px;
 	border-left: solid 1px #d2d2d2;
 	background-color: #eeeef0;
@@ -170,7 +173,7 @@ html, body, .container {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	min-height: 718px;
+	/*min-height: 718px;*/
 	min-width: 870px;
 	border-left: solid 1px #d2d2d2;
 }
@@ -233,6 +236,7 @@ html, body, .container {
 	padding: 10px;
 	resize: none;
 	font-family: "Microsoft YaHei";
+	white-space: pre-line;
 }
 .buttonArea {
 	position: fixed;
