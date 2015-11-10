@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Taike</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="nav">
+			<img src="images/logo.png" alt="logo" class="logo">
+			<a href="#pages1" class="index">钛氪科技</a>
+			<ul class="navbar">
+				<li><a href="#pages2">界面设计</a></li>
+				<li><a href="#pages3">软件开发</a></li>
+				<li><a href="#pages4">视频制作</a></li>
+				<li><a href="#pages5">产品孵化</a></li>
+				<li><a href="#pages6">联系我们</a></li>
+			</ul>
+		</div>
+		<div id="content">	
+			<div class="sections">
+				<div id="section1" class="section"></div>
+				<div id="section2" class="section"></div>
+				<div id="section3" class="section"></div>
+				<div id="section4" class="section"></div>
+				<div id="section5" class="section"></div>
+				<div id="section6" class="section"></div>			
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="pageswitch.js"></script>
+	<script type="text/javascript">
+		$("#content").PageSwitch({
+			'loop' : true,
+			'keyboard' : true,
+			'direction' : 'horizontal'
+		});
+	</script>
+</body>
+</html>
