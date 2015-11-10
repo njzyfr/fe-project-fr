@@ -1,0 +1,25 @@
+{
+  "name": "movieWeb",
+  "version": "0.0.1",
+  "authors": [
+    "njzyfr <njzyfr@126.com>"
+  ],
+  "description": "movieWeb learn from imooc",
+  "keywords": [
+    "movieWeb"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
