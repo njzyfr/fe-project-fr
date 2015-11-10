@@ -1,0 +1,124 @@
+body,html,ul,li,a{
+	padding: 0;
+	margin: 0;	
+}
+html, body {
+	height: 100%;
+	overflow: hidden;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+#container {
+	height: 100%;
+	position: relative;
+}
+#nav {
+	position: relative;
+	width: 956px;
+  	height: 36px;
+  	margin: 12px auto;
+  	background-image: url("images/nav.png");
+  	z-index: 999;
+}
+.logo {
+  	position: absolute;
+  	left: -50px;
+  	top: -7px;
+}
+.index {
+	position: absolute;
+	left: 16px;
+	top: 5px;
+	font-size: 18px;
+	font-family: "Microsoft YaHei";
+	font-weight: bold;
+}
+.navbar {
+	position: absolute;
+	left: 400px;
+}
+.navbar li {
+	float: left;
+	list-style-type: none;
+}
+.navbar li a {
+	display: inline-block;
+	width: 106px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 16px;
+	font-family: "Arial, '宋体',Helvetica, sans-serif";
+	font-weight: bold;
+	text-align: center;
+/*	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+/*.navbar li a {
+	line-height: 36px;
+	line-height: 36px\9;
+	*line-height: 36px;
+	+line-height: 36px;
+	_line-height: 36px;
+}*/
+.navbar li a:hover {
+    background-color: rgb(90, 90, 90);
+}
+#content {
+	height: 100%;
+	position: relative;	
+	left: 0;
+	top: -60px;
+}
+.sections, .section{
+	height: 100%;
+	position: relative;
+}
+.section{
+	background-color: #000;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#section1 {
+	background-image: url("images/index.jpg");
+}
+#section2 {
+	background-image: url("images/ui.jpg");
+}
+#section3 {
+	background-image: url("images/software.jpg");
+}
+#section4 {
+	background-image: url("images/vedio.jpg");
+}
+#section5 {
+	background-image: url("images/product.jpg");
+}
+#section6 {
+	background-image: url("images/contact.jpg");
+}
+
+.left{
+	float: left;
+}
+
+.pages{
+	position:fixed;
+	right: 10px;
+	top: 50%;
+	list-style: none;
+}
+.pages li{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 0 10px 5px;
+}
+.pages li.active{
+	width: 14px;
+	height: 14px;
+	border: 2px solid #FFFE00;
+	background: none;
+	margin-left: 0;
+}
